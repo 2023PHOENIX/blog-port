@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-
 type NavItem = {
   label: String;
   path: String;
@@ -14,8 +13,9 @@ const navItem: NavItem[] = [
 ];
 const Navbar: React.FC = () => {
   return (
-    <nav>
-      <ul>
+    <nav className="flex items-center justify-between px-6 py-4 bg-white shadow">
+      <img src="/crafterCode.png" alt="Logo" className="h-16 w-16" />
+      <ul className="flex space-x-6">
         {navItem.length > 0 && navItem.map((item) => (
           <li key={item.path}>
             <Link href={item.path}>{item.label}</Link>
