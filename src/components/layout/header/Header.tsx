@@ -32,7 +32,8 @@ export function Header() {
           className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
         >
           {/* <PenTool className="h-8 w-8 text-primary" /> */}
-          <span className="text-xl font-bold">CodeCraft</span>
+          <img src={"/crafterCode.png"} alt="Logo" className="h-25 w-25"/>
+          {/* <span className="text-xl font-bold">CodeCraft</span> */}
         </button>
 
         {/* Desktop Navigation */}

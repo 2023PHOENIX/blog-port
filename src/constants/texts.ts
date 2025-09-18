@@ -37,8 +37,8 @@ export const TEXTS = {
     ERROR: "Something went wrong. Please try again.",
   },
   FOOTER: {
-    COPYRIGHT: (year: number) => `© ${year} Alex Portfolio. All rights reserved.`,
+    COPYRIGHT: (year: number) => `© ${year} Abhishek Portfolio. All rights reserved.`,
     MADE_WITH: "Made with",
     USING: "using React & Tailwind CSS",
   },
-}s
+}
