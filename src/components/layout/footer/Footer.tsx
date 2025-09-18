@@ -1,15 +1,15 @@
 // import { Button } from "./ui/button";
 // import { Separator } from "./ui/separator";
-import { Github, Linkedin, Mail, Twitter, Heart } from "lucide-react";
+import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter ,FaHeart} from "react-icons/fa";
 import { TEXTS } from "@/src/constants/texts";
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: FaGithub, href: "#", label: "GitHub" },
+    { icon: FaLinkedin, href: "#", label: "LinkedIn" },
+    { icon: FaTwitter, href: "#", label: "Twitter" },
+    { icon: FaMailBulk, href: "#", label: "Email" },
   ];
 
   const quickLinks = [
@@ -89,7 +89,7 @@ export function Footer() {
           </p>
           <div className="flex items-center space-x-1 text-muted-foreground text-sm">
             <span>{TEXTS.FOOTER.MADE_WITH}</span>
-            <Heart className="h-4 w-4 text-red-500 fill-current" />
+            <FaHeart className="h-4 w-4 text-red-500 fill-current" />
             <span>{TEXTS.FOOTER.USING}</span>
           </div>
         </div>
